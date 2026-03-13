@@ -1,0 +1,32 @@
+// Account Class (Part 2) - Deposit Method
+public class Account {
+    private int accountNumber;
+    private String accountHolderName;
+    private double balance;
+
+    // Constructor (same as Part 1)
+    public Account(int accountNumber, String accountHolderName, double balance) {
+        this.accountNumber = accountNumber;
+        this.accountHolderName = accountHolderName;
+        this.balance = balance;
+    }
+
+    // Deposit method
+    public void deposit(double amount) {
+        this.balance += amount;
+    }
+
+    // Getter methods (optional for this variant)
+    public int getAccountNumber() {
+        return accountNumber;
+    }
+
+    public String getAccountHolderName() {
+        return accountHolderName;
+    }
+
+    public double getBalance() {
+        return balance;
+    }
+}
+
